@@ -296,8 +296,37 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
-.formulario textarea{
-    font-family: 'Roboto', sans-serif;
+.nombre{
+    transform: translateX(75px)
+}
+
+.apellido{
+    transform: translateX(75px)
+}
+
+.correo{
+    transform: translateX(53px);
+}
+
+.tel{
+    transform: translateX(70px)
+}
+
+
+.consulta{
+    transform: translateX(70px)
+}
+
+
+.btn{
+    cursor: pointer;
+    border-radius: 1rem;
+    padding: .25rem;
+    margin: .25rem;
+}
+
+.btn:hover, .btn:focus{
+    transform: scale(1.1);
 }
 
 
@@ -332,6 +361,13 @@ body{
     font-size: 1.1rem;
     padding-bottom: .5rem;
     padding-top: .5rem;
+    padding-right: 1rem;
+}
+
+.footer img{
+    width: 75px;
+    height: 75px;
+    transform: translateX(50px);
 }
 
 .enlaces{
@@ -416,5 +452,16 @@ body{
     padding: rem;
 }
 
+.formulario label{
+    color: coral;
+}
+
+.historia p{
+    color: linen;
+}
+
+.historia img{
+    height: 16rem;
+}
 
 }
