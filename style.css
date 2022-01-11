@@ -1,0 +1,420 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+/* Body */
+
+body{
+    background-color: coral;
+}
+
+.arriba{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    padding: 5px;
+    z-index: 10; 
+}
+
+.arriba img{
+    width: 50px;
+    height: 50px;
+}
+
+
+/* Navbar */
+
+.navbar{
+    background-color: #A11C41;
+    background-image: url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/chocolate-1533631081.jpg?resize=768:*);
+    background-size: cover;
+    margin: 1.5 rem;
+    font-family: 'Roboto', sans-serif;
+    grid-area: nav;
+}
+
+.navbar ul{
+    list-style-type: none;
+    padding: 2rem;
+}
+
+.navbar li{
+    display: inline-block;
+    margin: .25rem;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: linen;
+    font-size: 1rem;
+}
+
+.navbar__sub{
+    font-family: 'Roboto', sans-serif;
+    background-color: #A11C41;
+    grid-area: subnav;
+    margin-top: 0rem;
+}
+
+.navbar__sub ul{
+    list-style-type: none;
+    padding: 1rem;
+    text-align: center;
+}
+
+.navbar__sub li{
+    display: inline-block;
+    padding: 1rem;
+}
+
+.navbar__sub a{
+    text-decoration: none;
+    color: linen;
+    font-size: 1rem;
+    margin: 1rem;
+    padding: .5rem;
+}
+
+
+/* Index */
+
+.novedades{
+    display: grid;
+    grid-template-areas:
+    "nav nav"
+    "navidad"
+    "sombrero sombrero"
+    "rosas rosas"
+    "zapato zapato"
+    "footer footer";
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 90vw;
+    row-gap: 2rem;
+    column-gap: .5rem;
+    padding: 1rem;
+}
+
+.novedades p{
+    font-family: 'Roboto', sans-serif;
+}
+
+.novedades a{
+    text-decoration: none;
+    color: #A11C41;
+}
+
+.novedades img{
+    width: 15rem;
+}
+
+.navidad{
+    display: grid;
+    grid-template-areas:
+    "img_rosca txt_rosca";
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: .5rem;
+}
+
+.sombrero{
+    display: grid;
+    grid-template-areas:
+    "txt_sombrero img_sombrero";
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: .5rem;
+}
+
+.rosas{
+    display: grid;
+    grid-template-areas:
+    "img_rosas txt_rosas";
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: .5rem;
+}
+
+.zapato{
+    display: grid;
+    grid-template-areas:
+    "txt_zapato img_zapato";
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: .5rem;
+}
+
+.img_rosca{
+    grid-area: img_rosca
+}
+
+.txt_rosca{
+    grid-area: txt_rosca
+}
+
+.img_sombrero{
+    grid-area: img_sombrero
+}
+
+.txt_sombrero{
+    grid-area: txt_sombrero
+}
+
+.img_rosas{
+    grid-area: img_rosas
+}
+
+.txt_rosas{
+    grid-area: txt_rosas
+}
+
+.img_zapato{
+    grid-area: img_zapato
+}
+
+.txt_zapato{
+    grid-area: txt_zapato
+}
+
+
+/* Galería */
+
+.galería{
+    display: grid;
+    grid-template-areas:
+    "nav nav"
+    "fila1 fila1"
+    "fila2 fila2"
+    "fila3 fila3"
+    "footer footer";
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    row-gap: .5rem;
+    column-gap: .5rem;
+    height: 100vh;
+}
+
+.fila img{
+    margin-left: .5rem;
+}
+
+.fila1{
+    grid-area: fila1
+}
+
+.fila2{
+    grid-area: fila2
+}
+
+.fila3{
+    grid-area: fila3
+}
+
+
+/* Historia */
+.historia p{
+    font-family: 'Roboto', sans-serif;
+    text-align: justify;
+}
+
+.historia img{
+    height: 250px;
+    display: inline-block;
+}
+
+
+/* Productos  */
+
+.productos{
+    display: grid;
+    grid-template-areas: 
+    "nav nav nav"
+    "subnav choco desayunos"
+    "subnav tortas postres"
+    "subnav cafecito especiales"
+    "footer footer footer";
+    grid-template-rows: 1fr 2fr 2fr;
+    grid-template-columns: 1fr 2fr 2fr;
+    row-gap: 10px;
+    column-gap: 10px;
+    height: 100vh;
+}
+
+.choco{
+    grid-area: choco;
+}
+
+.desayunos{
+    grid-area: desayunos;
+}
+
+.tortas{
+    grid-area: tortas;
+}
+
+.postres{
+    grid-area: postres;
+}
+
+.cafecito{
+    grid-area: cafecito;
+}
+
+.especiales{
+    grid-area: especiales;
+}
+
+.productos p{
+    font-family: 'Roboto', sans-serif;
+}
+
+.productos table{
+    border-style: ridge;
+    border-radius: 25%;
+    padding: 10px;
+    text-align: center;
+}
+
+.productos table th{
+    font-family: 'Italianno', cursive;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #A11C41;
+    padding-inline: .5rem;
+}
+
+
+/* Contacto */
+
+.formulario{
+    padding: 1rem;
+}
+
+.formulario label{
+    font-family: 'Roboto', sans-serif;
+}
+
+.formulario input{
+    font-family: 'Roboto', sans-serif;
+}
+
+.formulario textarea{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* Footer */
+
+.footer{
+    background-color: #A11C41;
+    grid-area: footer;
+    display: grid;
+    grid-template-areas:
+    "enlaces none none redes";
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+    column-gap: 10px;
+    height: 25vh;
+}
+
+.footer ul{
+    list-style-type: none;
+    padding: 2rem;
+}
+
+.footer a{
+    text-decoration: none;
+    color: linen;
+    font-size: 1rem;
+}
+
+.footer p{
+    color: coral;
+    font-size: 1.1rem;
+    padding-bottom: .5rem;
+    padding-top: .5rem;
+}
+
+.enlaces{
+    grid-area: enlaces;
+}
+
+.redes{
+    grid-area: redes;
+}
+
+
+
+/* Media Queries */
+
+@media screen and (max-width: 768px) {
+    body {
+        background-color: #A11C41;
+    }
+    
+.novedades p{
+    color: linen;
+}
+
+.novedades a{
+    color: coral;
+}
+
+.footer{
+    background-color: coral;
+
+}
+
+.footer p{
+    color: #A11C41;
+}
+
+.footer a{
+    color: black;
+}
+
+.productos{
+    grid-template-areas: 
+    "nav nav"
+    "subnav choco"
+    "subnav desayunos"
+    "subnav tortas"
+    "subnav postres"
+    "subnav cafecito"
+    "subnav especiales"
+    "footer footer";
+    grid-template-rows: 1fr 2fr;
+    grid-template-columns: 1fr 2fr;
+    row-gap: 10px;
+    column-gap: 10px;
+    height: 100vh;
+}
+
+.productos table th{
+    color: coral;
+}
+
+.productos td{
+    color: linen;
+}
+
+.navbar__sub{
+    background-color: coral;
+}
+
+.navbar__sub li{
+    display: inline-block;
+    padding: 1rem;
+    align-items: center;
+}
+
+.navbar__sub a{
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    font-size: 1rem;
+    margin: 1rem;
+    padding: rem;
+}
+
+
+}
