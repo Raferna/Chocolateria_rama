@@ -301,23 +301,27 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
-.nombre{
+.formulario div{
+    margin: 1rem;
+}
+
+.name{
     transform: translateX(75px)
 }
 
-.apellido{
+.lastname{
     transform: translateX(75px)
 }
 
-.correo{
-    transform: translateX(53px);
+.mail{
+    transform: translateX(62px);
 }
 
 .tel{
     transform: translateX(70px)
 }
 
-.consulta{
+.query{
     transform: translateX(70px)
 }
 
