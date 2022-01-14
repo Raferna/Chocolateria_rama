@@ -269,13 +269,12 @@ body{
     grid-area: especiales;
 }
 
-.productos table{
-    border-style: ridge;
-    border-radius: 25%;
+.product{
     padding: 10px;
     text-align: center;
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
+    color: #A11C41;
 }
 
 .productos table th{
@@ -286,6 +285,10 @@ body{
     padding-inline: .5rem;
 }
 
+.table {
+    color: #A11C41;
+    border-color: #A11C41;
+  }
 
 /* Contacto */
 
@@ -325,14 +328,14 @@ body{
     transform: translateX(70px)
 }
 
-.btn{
+.bttn{
     cursor: pointer;
     border-radius: 1rem;
     padding: .25rem;
     margin: .25rem;
 }
 
-.btn:hover, .btn:focus{
+.bttn:hover, .bttn:focus{
     transform: scale(1.05);
 }
 
@@ -349,7 +352,7 @@ body{
     grid-template-columns: 1fr;
     row-gap: 10px;
     column-gap: 10px;
-    height: 25vh;
+    height: 30vh;
 }
 
 .footer ul{
@@ -440,10 +443,11 @@ body {
     color: coral;
 }
 
-.productos table {
-    margin-right: 1rem;
-    margin-left: .75rem;
-}
+.table {
+    color: coral;
+    border-color: coral;
+    margin: 1rem;
+  }
 
 .productos td{
     color: linen;

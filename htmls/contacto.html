@@ -9,17 +9,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Italianno&family=Roboto:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css" href="css_bs/bootstrap.min.css">
+    <link rel="stylesheet" href="/css_bs/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
-    <header class="navbar"><ul>
-        <li><a href="/index.html">Novedades</a></li>
-        <li><a href="/htmls/productos.html">Productos</a></li>
-        <li><a href="/htmls/galeria.html">Galería</a></li>
-        <li><a href="/htmls/quienes_somos.html">Quiénes somos</a></li>
-        <li><a href="/htmls/contacto.html">Contacto</a></li>
-    </ul></header>
+    <header><ul class="nav justify-content-end navbar">
+        <li class="nav-item">
+          <a class="nav-link" href="/index.html">Novedades</a></li>
+        <li class="nav-item">
+          <a class="nav-link" href="/htmls/productos.html">Productos</a></li>
+        <li class="nav-item">
+          <a class="nav-link" href="/htmls/galeria.html">Galería</a></li>
+        <li class="nav-item">
+          <a class="nav-link" href="/htmls/quienes_somos.html">Quiénes somos</a></li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/htmls/contacto.html">Contacto</a></li>
+      </ul></header>
     
     <section class="formulario"><form action="">
         <div class="div_name"><label for="nombre">Nombre:</label>
@@ -38,8 +44,8 @@
         <textarea class="query" cols="50" rows="5"
         placeholder="¿Cuál es tu consulta?" required></textarea></div>
 
-        <input type="submit" value="Enviar consulta" class="btn">
-        <input type="reset" value="Reiniciar formulario" class="btn">
+        <input type="submit" value="Enviar consulta" class="bttn">
+        <input type="reset" value="Reiniciar formulario" class="bttn">
     </form></section>
     
     <a href="" class="arriba"><img src="/assets/up-arrow.png" alt="Volver arriba"></a>
