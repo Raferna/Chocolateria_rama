@@ -55,6 +55,10 @@ body{
     font-size: 1rem;
 }
 
+.navbar a:hover, .navbar a:focus{
+    color: coral;
+}
+
 .navbar__sub{
     font-family: 'Roboto', sans-serif;
     grid-area: subnav;
@@ -114,7 +118,8 @@ body{
 }
 
 .novedades img{
-    width: 15rem;
+    width:fit-content
+    /* height: 20rem; */
 }
 
 .navidad{
@@ -302,31 +307,27 @@ body{
 
 .formulario input{
     font-family: 'Roboto', sans-serif;
+    margin: 1rem;
+    margin-left: 3rem;
 }
 
-.formulario div{
-    margin: 1rem;
+.formulario textarea{
+    margin-top: 1rem;
+    margin-left: 3rem;
 }
 
 .name{
-    transform: translateX(75px)
+    transform: translateX(5px)
 }
 
 .lastname{
-    transform: translateX(75px)
+    transform: translateX(5px)
 }
 
 .mail{
-    transform: translateX(62px);
+    transform: translateX(-17px);
 }
 
-.tel{
-    transform: translateX(70px)
-}
-
-.query{
-    transform: translateX(70px)
-}
 
 .bttn{
     cursor: pointer;
@@ -353,6 +354,7 @@ body{
     row-gap: 10px;
     column-gap: 10px;
     height: 30vh;
+    transform: translateY(bottom);
 }
 
 .footer ul{
@@ -443,11 +445,11 @@ body {
     color: coral;
 }
 
-.table {
+.table{
     color: coral;
     border-color: coral;
     margin: 1rem;
-  }
+}
 
 .productos td{
     color: linen;
