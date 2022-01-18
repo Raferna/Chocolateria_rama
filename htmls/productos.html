@@ -15,6 +15,18 @@
 
 <body class="productos">
     <header><ul class="nav justify-content-end navbar">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categorías</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#choco">Chocolates</a></li>
+                <li><a class="dropdown-item" href="#desayunos">Desayunos</a></li>
+                <li><a class="dropdown-item" href="#tortas">Tortas</a></li>
+                <li><a class="dropdown-item" href="#tartas">Tartas</a></li>
+                <li><a class="dropdown-item" href="#postres">Postres</a></li>
+                <li><a class="dropdown-item" href="#cafecito">Cafecito</a></li>
+                <li><a class="dropdown-item" href="#especiales">Fechas Especiales</a></li>
+                </ul>
+            </li>
         <li class="nav-item">
           <a class="nav-link" href="/index.html">Novedades</a></li>
         <li class="nav-item">
@@ -26,168 +38,339 @@
         <li class="nav-item">
           <a class="nav-link" href="/htmls/contacto.html">Contacto</a></li>
       </ul></header>
-    
-    <nav class= "navbar__sub">
-    <ul>
-        <li><a href="#choco">Chocolates</a></li>
-        <li><a href="#desayunos">Desayunos</a></li>
-        <li><a href="#tortas">Tortas y tartas</a></li>
-        <li><a href="#postres">Postres</a></li>
-        <li><a href="#cafecito">Cafecito</a></li>
-        <li><a href="#especiales">Especiales</a></li>
-    </ul>
-    </nav>
 
-    <div id="choco">
-        
-        <table class="table product">
-            <tr>
-                <th>Producto</th>
-                <th>Precio</th>
-            </tr>
+    <div class="container">
+        <div class="row">
+            <div id="choco" class="col-md-6"><table class="table table-striped table-borderless table-sm table-dream caption-top">
+                <caption class="caption">Chocolates</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Producto</th>
+                        <th scope="col">Precio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Conitos de dulce de leche X6</th>
+                        <td>$250</td>
+                    </tr>
+                    <tr>
+                        <td>Corazones de chocolate X3</td>
+                        <td>$150</td>
+                    </tr>
+                </tbody>
+            </table></div>
 
-            <tr>
-                <td>Conitos de dulce de leche X6</td>
-                <td>$250</td>
-            </tr>
+            <div id="desayunos" class="col-md-6"><table class="table table-striped table-borderless table-sm table-dream caption-top">
+                <caption class="caption">Desayunos</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Producto</th>
+                        <th scope="col">Precio</th>
+                    </tr>
+                </thead>
 
-            <tr>
-                <td>Corazones de chocolate X3</td>
-                <td>$150</td>
-            </tr>
-        </table>
+                <tbody>
+                    <tr>
+                        <td>asdasda</td>
+                        <td>asdasda</td>
+                    </tr>
+                </tbody>
+            </table></div>
+        </div>
     </div>
 
-    <div id="desayunos">
-        <table class="table product">
+    <div class="row">
+        <div class="col-md-1"></div>
+
+        <div id="tortas" class="col-md-5"><table class="table table-striped table-borderless table-sm table-dream caption-top">
+            <caption class="caption">Tortas</caption>
+            <thead>
             <tr>
-                <th>Producto</th>
-                <th>Precio</th>
+                <th scope="col">Producto</th>
+                <th scope="col">Precio</th>
+            </tr>
+            </thead>
+
+            <tbody>
+            <tr><td>Hojaldre, pastelera y ddl</td>
+                <td>$750</td>
             </tr>
 
-            <tr>
-                <td>asdasda</td>
-                <td>asdasda</td>
-            </tr>
-        </table>
-    </div>
-
-    <div id="tortas">
-        <table class="table product">
-            <tr>
-                <th>Producto</th>
-                <th>Precio porción</th>
-                <th>Precio chica</th>
+            <tr><td>Frutal con crema chantilly</td>
+                <td>$750</td>
             </tr>
 
-            <tr>
-                <td>Chocotorta</td>
-                <td></td>
-                <td>$870</td>
+            <tr><td>Crema de chocolate y café</td>
+                <td>$850</td>
             </tr>
-
-            <tr>
-                <td>Doble mousse (chocolate/frutilla)</td>
-                <td></td>
+            
+            <tr><td>Cheese cake de ddl</td>
+                <td>$850</td>
+            </tr>
+            
+            <tr><td>Ganache de choco c/ mousse de frutilla</td>
+                <td>$850</td>
+            </tr>
+            
+            <tr><td>Doble mousse (chocolate/frutilla)</td>
                 <td>$850</td>
             </tr>
 
-            <tr>
-                <td>Lemon pie / Orange pie</td>
-                <td>$200</td>
-                <td>$630</td>
-            </tr>
-        </table>
-    </div>
-
-    <div id="postres">
-        <table class="table product">
-            <tr>
-                <th>Producto</th>
-                <th>Precio</th>
+            <tr><td>Bariloche (bizcochuelo de chocolate c/ mousse de choco <br>
+                y ddl, cubierto de merengue veteado)</td>
+                <td>$850</td>
             </tr>
 
-            <tr>
-                <td>Pionono (DDL, chocolate o crema)</td>
-                <td>$490</td>
+            <tr><td>Chocotorta</td>
+                <td>$870</td>
             </tr>
 
-            <tr>
-                <td>Pionono (mousse de chocolate o frutilla)</td>
-                <td>$550</td>
+            <tr><td>Molino</td>
+                <td>$870</td>
             </tr>
 
-            <tr>
-                <td>Tiramisú</td>
+            <tr><td>Cheese cake de chocolate</td>
+                <td>$870</td>
+            </tr>
+
+            <tr><td>Base de oreo c/ mousse de chocolate</td>
+                <td>$870</td>
+            </tr>
+
+            <tr><td>Sacher</td>
+                <td>$870</td>
+            </tr>
+
+            <tr><td>Red velvet</td>
+                <td>$870</td>
+            </tr>
+
+            <tr><td>Balcarce</td>
                 <td>$890</td>
             </tr>
-        </table>
-    </div>
 
-    <div id="cafecito">
-        <table class="table product">
-            <tr>
-                <th>Producto</th>
-                <th>Precio</th>
+            <tr><td>Selva negra</td>
+                <td>$950</td>
             </tr>
 
-            <tr>
-                <td>Budín (limón, naranja o vainilla)</td>
-                <td>$220</td>
+            <tr><td>Tres chocolates</td>
+                <td>$950</td>
             </tr>
+            </tbody>        
+        </table></div>
 
-            <tr>
-                <td>Budín (chocolate o marmolado)</td>
-                <td>$240</td>
-            </tr>
-
-            <tr>
-                <td>Budín (vainilla con chips o con manzana)</td>
-                <td>$240</td>
-
+        <div id="tartas" class="col-md-5"><table class="table table-striped table-borderless table-sm table-dream caption-top">
+        <caption class="caption">Tartas</caption>
+            <thead>
                 <tr>
-                    <td>Alfajores de maicena X10</td>
-                    <td>$200</td>
+                    <th scope="col">Producto</th>
+                    <th scope="col">Precio porción</th>
+                    <th scope="col">Precio chica</th>
                 </tr>
-            </tr>
+            </thead>
+            <tbody>
+                <tr><td>Pastafrola (membrillo o batata)</td>
+                    <td></td>
+                    <td>$420</td>
+                </tr>
+                <tr><td>Pastafrola mixta</td>
+                    <td></td>
+                    <td>$420</td>
+                </tr>
+                <tr><td>Pastafrola ddl</td>
+                    <td></td>
+                    <td>$420</td>
+                </tr>
+                <tr><td>Ricota</td>
+                    <td></td>
+                    <td>$450</td>
+                </tr>
+                <tr><td>Ricota con ddl</td>
+                    <td></td>
+                    <td>$480</td>
+                </tr>
+                <tr><td>Coquitos</td>
+                    <td></td>
+                    <td>$630</td>
+                </tr>
+                <tr><td>Lemon pie / Orange pie</td>
+                    <td>$200</td>
+                    <td>$630</td>
+                </tr>
+                <tr><td>Pastelera con pétalos de fruta</td>
+                    <td></td>
+                    <td>$650</td>
+                </tr>
+                <tr><td>Manzana con crumble</td>
+                    <td>$200</td>
+                    <td>$650</td>
+                </tr>
+                <tr><td>Pastelera de chocolate y merengue</td>
+                    <td></td>
+                    <td>$650</td>
+                </tr>
+                <tr><td>Coco con ddl</td>
+                    <td></td>
+                    <td>$670</td>
+                </tr>
+                <tr><td>Copitos</td>
+                    <td></td>
+                    <td>$720</td>
+                </tr>
+                <tr><td>Cabsha</td>
+                    <td>$180</td>
+                    <td>$790</td>
+                </tr>
+                <tr><td>Tarta de frutillas (estación)</td>
+                    <td></td>
+                    <td>$790</td>
+                </tr>
+                <tr><td>Brownie</td>
+                    <td>$200</td>
+                    <td>$850</td>
+                </tr>
+                <tr><td>Marroc con ddl</td>
+                    <td></td>
+                    <td>$850</td>
+                </tr>
+                <tr><td>Tarta Baileys</td>
+                    <td></td>
+                    <td>$850</td>
+                </tr>
+                <tr><td>Brownie con mousse de frutilla</td>
+                    <td></td>
+                    <td>$870</td>
+                </tr>
+                <tr><td>Marroc y ganache de chocolate</td>
+                    <td></td>
+                    <td>$870</td>
+                </tr>
+            </tbody>
+        </table></div>
+        <div class="col-md-1"></div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div id="postres" class="col-md-5"><table class="table table-striped table-borderless table-sm table-dream caption-top">
+            <caption class="caption">Postres</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Producto</th>
+                        <th scope="col">Precio</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Pionono (DDL, chocolate o crema)</td>
+                        <td>$490</td>
+                    </tr>
+
+                    <tr>
+                        <td>Pionono (mousse de chocolate o frutilla)</td>
+                        <td>$550</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Tronco de árbol (pionono ddl bañado en chocolate)</td>
+                        <td>$550</td>
+                    </tr>
+
+                    <tr>
+                        <td>Tiramisú</td>
+                        <td>$890</td>
+                    </tr>
+                </tbody>
         </table>
     </div>
 
-    <div id="especiales">
-        <table class="table product">
-            <tr>
-                <th>Producto</th>
-                <th>Precio</th>
-            </tr>
+        <div id="cafecito" class="col-md-5"><table class="table table-striped table-borderless table-sm table-dream caption-top">
+            <caption class="caption">Para el cafecito</caption>
+                <thead>
+                <tr>
+                    <th scope="col">Producto</th>
+                    <th scope="col">Precio</th>
+                </tr>
+                </thead>
 
-            <tr>
-                <td>Pan dulce 500grs (pasas y frutas abrill.)</td>
-                <td>$420</td>
-            </tr>
+                <tbody>
+                    <tr>
+                        <td>Budín (limón, naranja o vainilla)</td>
+                        <td>$220</td>
+                    </tr>
 
-            <tr>
-                <td>Pan dulce 500grs (chips de chocolate)</td>
-                <td>$450</td>
-            </tr>
+                    <tr>
+                        <td>Budín (chocolate o marmolado)</td>
+                        <td>$240</td>
+                    </tr>
 
-            <tr>
-                <td>Pan dulce 500grs (frutas secas)</td>
-                <td>$550</td>
-            </tr>
+                    <tr>
+                        <td>Budín (vainilla con chips o con manzana)</td>
+                        <td>$240</td>
+                    </tr>
 
-            <tr>
-                <td>Pan dulce 500grs (todo lo anterior)</td>
-                <td>$570</td>
-            </tr>
+                    <tr>
+                        <td>Alfajores de maicena X10</td>
+                        <td>$200</td>
+                    </tr>
 
-            <tr>
-                <td>Rosca navideña</td>
-                <td>$420</td>
-            </tr>
-        </table>
+                    <tr>
+                        <td>Alfajores bañados en choco X8</td>
+                        <td>$250</td>
+                    </tr>
+                </tbody>
+            </table></div>
+        </div>
+        <div class="col-md-1"></div></div>
+        </div>
+    
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div id="especiales" class="col-md-6"><table class="table table-striped table-borderless table-sm table-dream caption-top">
+                <caption class="caption">Para el cafecito</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Producto</th>
+                            <th scope="col">Precio</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Pan dulce 500grs (pasas y frutas abrill.)</td>
+                            <td>$420</td>
+                        </tr>
+
+                        <tr>
+                            <td>Pan dulce 500grs (chips de chocolate)</td>
+                            <td>$450</td>
+                        </tr>
+
+                        <tr>
+                            <td>Pan dulce 500grs (frutas secas)</td>
+                            <td>$550</td>
+                        </tr>
+
+                        <tr>
+                            <td>Pan dulce 500grs (todo lo anterior)</td>
+                            <td>$570</td>
+                        </tr>
+
+                        <tr>
+                            <td>Rosca navideña</td>
+                            <td>$420</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="col-md-3"></div>
     </div>
 
 <a href="" class="arriba"><img src="/assets/up-arrow.png" alt="Volver arriba"></a>
+</div>
 
     <footer class= "footer">
         <div class="enlaces"><ul>
@@ -204,6 +387,6 @@
     <a href="https://www.instagram.com/sdechoco.5/"> <img src="/assets/LogoIG.png" alt="Logo Instagram"> </a></div>
     </footer>
 
-    <script src="/js_bs/bootstrap.min.js"></script>
+<script src="/js_bs/bootstrap.min.js"></script>
 </body>
 </html>

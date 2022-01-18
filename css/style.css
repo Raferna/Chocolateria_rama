@@ -36,12 +36,12 @@ body{
     background-size: cover;
     margin: 1.5 rem;
     font-family: 'Roboto', sans-serif;
-    grid-area: nav;
 }
 
 .navbar ul{
     list-style-type: none;
     padding: 2rem;
+    color: #A11C41;
 }
 
 .navbar li{
@@ -59,35 +59,11 @@ body{
     color: coral;
 }
 
-.navbar__sub{
-    font-family: 'Roboto', sans-serif;
-    grid-area: subnav;
-    background-image: linear-gradient(to top, #A11C41, coral);
-    transform:translateY(15px);
-}
-
-.navbar__sub ul{
-    list-style-type: none;
-    padding: 1rem;
-    text-align: center;
-}
-
-.navbar__sub li{
-    display: inline-block;
-    padding: 1rem;
-}
-
-.navbar__sub a{
-    text-decoration: none;
-    color: linen;
-    font-size: 1rem;
-    margin: 1rem;
-    padding: .5rem;
-}
-
-.navbar__sub ul :hover{
-    transform: scale(1.1);
-}
+.dropdown-menu {
+    background-color: #a11c4249;
+    background-blend-mode: saturation;
+    border: none;
+  }
 
 /* Index */
 
@@ -189,36 +165,6 @@ body{
 
 /* Galería */
 
-.galería{
-    display: grid;
-    grid-template-areas:
-    "nav nav"
-    "fila1 fila1"
-    "fila2 fila2"
-    "fila3 fila3"
-    "footer footer";
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    row-gap: .5rem;
-    column-gap: .5rem;
-    height: 100vh;
-}
-
-.fila img{
-    margin-left: .5rem;
-}
-
-.fila1{
-    grid-area: fila1
-}
-
-.fila2{
-    grid-area: fila2
-}
-
-.fila3{
-    grid-area: fila3
-}
 
 
 /* Historia */
@@ -235,50 +181,10 @@ body{
 
 /* Productos  */
 
-.productos{
-    display: grid;
-    grid-template-areas: 
-    "nav nav nav"
-    "subnav choco desayunos"
-    "subnav tortas postres"
-    "subnav cafecito especiales"
-    "footer footer footer";
-    grid-template-rows: 1fr 2fr 2fr;
-    grid-template-columns: 1fr 2fr 2fr;
-    row-gap: 10px;
-    column-gap: 10px;
-    height: 100vh;
-}
 
-.choco{
-    grid-area: choco;
-}
-
-.desayunos{
-    grid-area: desayunos;
-}
-
-.tortas{
-    grid-area: tortas;
-}
-
-.postres{
-    grid-area: postres;
-}
-
-.cafecito{
-    grid-area: cafecito;
-}
-
-.especiales{
-    grid-area: especiales;
-}
-
-.product{
-    padding: 10px;
+.caption{
     text-align: center;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1rem;
+    margin-top: 2.5rem;
     color: #A11C41;
 }
 
@@ -291,9 +197,19 @@ body{
 }
 
 .table {
-    color: #A11C41;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+}
+
+.table-dream {
+    --bs-table-bg: coral;
+    --bs-table-striped-bg: #ff7752;
+    color: #000;
     border-color: #A11C41;
-  }
+}
+
 
 /* Contacto */
 
@@ -399,18 +315,6 @@ body {
     background-color: #A11C41;
 }
 
-.novedades{
-    background-image: linear-gradient(#A11C41, coral);
-}
-    
-.novedades p{
-    color: linen;
-}
-
-.novedades a{
-    color: coral;
-}
-
 .footer{
     background-color: coral;
 
@@ -424,59 +328,44 @@ body {
     color: black;
 }
 
-.productos{
-    grid-template-areas: 
-    "nav nav"
-    "subnav choco"
-    "subnav desayunos"
-    "subnav tortas"
-    "subnav postres"
-    "subnav cafecito"
-    "subnav especiales"
-    "footer footer";
-    grid-template-rows: 1fr 2fr;
-    grid-template-columns: 1fr 2fr;
-    row-gap: 10px;
-    column-gap: 10px;
-    height: 100vh;
+
+/* Index */
+
+.novedades{
+    background-image: linear-gradient(#A11C41, coral);
+}
+    
+.novedades p{
+    color: linen;
+}
+
+.novedades a{
+    color: coral;
+}
+
+
+/* Productos */
+
+.table-dream {
+        --bs-table-bg: hsl(343, 70%, 37%);
+        --bs-table-striped-bg: #ad1f47;
+        --bs-table-striped-color: linen;
+        color: linen;
+        border-color: coral;
 }
 
 .productos table th{
     color: coral;
 }
 
-.table{
-    color: coral;
-    border-color: coral;
-    margin: 1rem;
-}
-
-.productos td{
-    color: linen;
-}
-
-.navbar__sub{
-    background-image: linear-gradient(to bottom, #A11C41, coral);
-}
-
-.navbar__sub li{
-    display: inline-block;
-    padding: 1rem;
-    align-items: center;
-}
-
-.navbar__sub a{
-    text-decoration: none;
-    text-align: center;
-    color: linen;
-    font-size: 1rem;
-    margin: 1rem;
-    padding: rem;
-}
+/* Contacto */
 
 .formulario label{
     color: coral;
 }
+
+
+/* Historia */
 
 .historia p{
     color: linen;
