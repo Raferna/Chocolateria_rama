@@ -1,0 +1,36 @@
+.navbar{
+    margin: 1.5 rem;
+    font-family: 'Roboto', sans-serif;
+        background: {
+        color: #A11C41;
+        image: url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/chocolate-1533631081.jpg?resize=768:*);
+        size: cover;}
+}
+    ul{
+    list-style-type: none;
+    padding: 2rem;
+    color: #A11C41;
+
+    li{
+    display: inline-block;
+    margin: .25rem;
+
+    a{
+    text-decoration: none;
+    color: linen;
+    font-size: 1rem;
+
+        &:hover {
+        color: coral;
+        }
+    }
+    }
+    }
+
+.dropdown-menu {
+    border: none;
+    background: {
+        color: #a11c4249;
+        blend-mode: saturation;
+    }
+}

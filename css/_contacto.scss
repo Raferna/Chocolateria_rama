@@ -1,0 +1,45 @@
+.formulario{
+    padding: 1rem;
+    background-image: linear-gradient(to top, #A11C41, coral);
+
+    label{
+    font-family: 'Roboto', sans-serif;
+    color: linen;
+
+    input{
+    font-family: 'Roboto', sans-serif;
+    margin: 1rem;
+    margin-left: 3rem;
+
+    textarea{
+    font-family: 'Roboto', sans-serif;
+    margin-top: 1rem;
+    margin-left: 3rem;
+    }
+    }
+    }
+}
+
+.name{
+    transform: translateX(.3rem)
+}
+
+.lastname{
+    transform: translateX(.3rem)
+}
+
+.mail{
+    transform: translateX(-1rem);
+}
+
+.bttn{
+    cursor: pointer;
+    border-radius: 1rem;
+    padding: .25rem;
+    margin: .25rem;
+
+        &:hover{
+        transform: scale(1.05);
+        color: coral;
+        }
+}
