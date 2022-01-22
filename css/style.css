@@ -9,6 +9,7 @@
 
 body{
     background-color: coral;
+    background-image: linear-gradient(to top, #A11C41, coral);
 }
 
 .arriba{
@@ -27,6 +28,10 @@ body{
 .arriba :hover{
     transform: scale(1.1);
 }
+
+.card {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
 
 /* Navbar */
 
@@ -82,10 +87,13 @@ body{
     color: #A11C41;
 }
 
-.novedades img{
-    width: fit-content
-}
+.mb-3 {
+    margin-bottom: 0rem !important;
+  }
 
+.img-fit{
+    height: 36vh;
+}
 
 /* Galería */
 
@@ -95,16 +103,44 @@ body{
 
 
 /* Historia */
-.historia p{
-    font-family: 'Roboto', sans-serif;
-    text-align: justify;
-}
 
 .text-white{
-    margin-top: 2.5rem;
+    margin-top: 2.5rem !important;
 }
 
+.card-title-overlay{
+    transform: translateY(25rem);
+    font-size: 1.6rem;
+    background-color: #1a1d2080;
+    text-align: center;
+}
 
+.card-text-overlay{
+    transform: translateY(25rem);
+    font-size: 1.1rem;
+    background-color: #1a1d2080;
+    text-align: center;
+}
+
+.border-light{
+    border-color: transparent !important;
+}
+
+.medialunas{
+    transform: scale(.95);
+}
+
+.jurassic{
+    transform: scale(.95);
+}
+
+.ps{
+    transform: scale(.95);
+}
+
+.historia .card{
+    margin: 1rem;
+}
 
 /* Productos  */
 
@@ -113,7 +149,7 @@ body{
     margin-top: 2.5rem;
     color: #A11C41;
     font-family: 'Italianno', cursive;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
 }
 
 .productos table th{
@@ -138,6 +174,9 @@ body{
     border-color: #A11C41;
 }
 
+.productos{
+    background-image: none !important;
+}
 
 /* Contacto */
 
@@ -225,8 +264,8 @@ body{
 
 .footer img{
     margin: 1rem;
-    height: 75px;
-    transform: translateX(50px);
+    height: 3.75rem;
+    transform: translateX(3rem);
 }
 
 .enlaces{
