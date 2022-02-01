@@ -283,6 +283,7 @@ body{
 @media screen and (max-width: 768px) {
 body {
     background-color: #A11C41;
+    background-image: linear-gradient(to bottom #A11C41, coral);
 }
 
 
@@ -303,10 +304,6 @@ body {
 
 
 /* Index */
-
-.novedades{
-    background-image: linear-gradient(#A11C41, coral);
-}
 
 .novedades a{
     color: coral;
@@ -338,9 +335,12 @@ body {
 /* Contacto */
 
 .formulario label{
-    color: coral;
+    color: black;
 }
 
+.formulario textarea{
+    transform: scale(0.7);
+}
 
 /* Historia */
 
