@@ -1,0 +1,30 @@
+$estilosH:(
+    centrar: center,
+    dark: #A11C41,
+    light: coral,
+    fuente: 'Italianno',
+);
+
+h1, .h1 {
+    font-size: calc(1.75rem + 2vw);
+  }
+
+
+.titles{
+    color: map-get($estilosH, dark);
+    text-align: map-get($estilosH, centrar);
+    font-family: map-get($estilosH, fuente);
+}
+
+$redes: (
+    fb: rgba(70, 131, 180, 0.5),
+    insta: rgba(186, 85, 211, 0.5),
+);
+
+@each $red, $color in $redes {
+    .logo__#{$red}{
+        &:hover{
+        background-color: $color;
+    }
+    }
+}

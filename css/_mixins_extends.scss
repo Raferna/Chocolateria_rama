@@ -1,0 +1,27 @@
+@mixin tamaño($width, $height){
+    width: $width;
+    height: $height;
+}
+
+.table {
+    padding: 1rem;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+
+    th{
+        font-family: 'Italianno', cursive;
+        font-size: 1.75rem;
+        text-align: center;
+        color: #A11C41;
+        padding-inline: .5rem;
+    }
+}
+
+.table-dream {
+    @extend .table
+    --bs-table-bg: coral;
+    --bs-table-striped-bg: #ff7752;
+    color: #000;
+    border-color: #A11C41;
+}

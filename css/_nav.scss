@@ -9,7 +9,6 @@
     ul{
     list-style-type: none;
     padding: 2rem;
-    color: #A11C41;
 
     li{
     display: inline-block;
@@ -17,11 +16,11 @@
 
     a{
     text-decoration: none;
-    color: linen;
+    color: linen !important;
     font-size: 1rem;
 
         &:hover {
-        color: coral;
+        color: coral !important;
         }
     }
     }

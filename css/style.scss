@@ -1,4 +1,284 @@
+@import "nav";
+@import "contacto";
+@import "maps";
+@import "mixins_extends";
+@import "body";
 
-/* Navbar */
-@import "nav"
-@import "contacto"
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/* Index */
+
+.novedades{
+    padding: 1.5rem;
+}
+
+.novedades p{
+    font-family: 'Roboto', sans-serif;
+    color: black;
+
+    a{
+        text-decoration: none;
+        color: #A11C41;
+    }
+}
+
+.mb-3 {
+    margin-bottom: 0rem !important;
+}
+
+.img-fit{
+    height: 36vh;
+    width: auto;
+}
+
+/* Galería */
+
+.g-4{
+    margin: 2.5rem;
+}
+
+
+/* Historia */
+
+.text-white{
+    margin-top: 2.5rem !important;
+}
+
+.card-title-overlay{
+    transform: translateY(25rem);
+    font-size: 1.6rem;
+    background-color: #1a1d2080;
+    text-align: center;
+}
+
+.card-text-overlay{
+    transform: translateY(25rem);
+    font-size: 1.1rem;
+    background-color: #1a1d2080;
+    text-align: center;
+}
+
+.border-light{
+    border-color: transparent !important;
+}
+
+.medialunas{
+    transform: scale(.95);
+}
+
+.jurassic{
+    transform: scale(.95);
+}
+
+.ps{
+    transform: scale(.95);
+}
+
+.historia .card{
+    margin: 1rem;
+}
+
+
+/* Productos  */
+
+.productos{
+    background-image: none !important;
+}
+
+.caption{
+    margin-top: 2.5rem;
+    color: #A11C41;
+    font-family: 'Italianno', cursive;
+    font-size: 1.75rem;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+}
+
+
+
+
+/* Contacto */
+
+.formulario{
+    padding: 1rem;
+    background-image: linear-gradient(to top, #A11C41, coral);
+}
+
+.formulario label{
+    font-family: 'Roboto', sans-serif;
+    color: linen;
+}
+
+.formulario input{
+    font-family: 'Roboto', sans-serif;
+    margin: 1rem;
+    margin-left: 3rem;
+}
+
+.formulario textarea{
+    font-family: 'Roboto', sans-serif;
+    margin-top: 1rem;
+    margin-left: 3rem;
+}
+
+.name{
+    transform: translateX(5px)
+}
+
+.lastname{
+    transform: translateX(5px)
+}
+
+.mail{
+    transform: translateX(-16px);
+}
+
+.bttn{
+    cursor: pointer;
+    border-radius: 1rem;
+    padding: .25rem;
+    margin: .25rem;
+}
+
+.bttn:hover, .bttn:focus{
+    transform: scale(1.05);
+    color: coral;
+}
+
+
+/* Footer */
+
+.footer{
+    background-color: #A11C41;
+    grid-area: footer;
+    display: grid;
+    grid-template-areas:
+    "enlaces none none redes";
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+    column-gap: 10px;
+    height: 30vh;
+    transform: translateY(bottom);
+}
+
+.footer ul{
+    list-style-type: none;
+    padding: 2rem;
+}
+
+.footer a{
+    text-decoration: none;
+    color: linen;
+    font-size: 1rem;
+}
+
+.footer p{
+    color: coral;
+    font-size: 1.1rem;
+    padding-bottom: .5rem;
+    padding-top: .5rem;
+    padding-right: 1rem;
+}
+
+.footer img{
+    margin: 1rem;
+    height: 3.75rem;
+    transform: translateX(3rem);
+}
+
+.enlaces{
+    grid-area: enlaces;
+}
+
+.redes{
+    grid-area: redes;
+}
+
+
+
+/* Media Queries */
+
+@media screen and (max-width: 768px) {
+body {
+    background-color: #A11C41;
+    background-image: linear-gradient(to bottom, #A11C41, coral);
+}
+
+
+/* Footer */
+
+.footer{
+    background-color: coral;
+
+}
+
+.footer p{
+    color: #A11C41;
+}
+
+.footer a{
+    color: black;
+}
+
+
+/* Index */
+
+.novedades a{
+    color: coral;
+}
+
+.img-fit{
+    width: 100vw;
+    height: auto;
+}
+
+
+/* Productos */
+
+.table-dream {
+        --bs-table-bg: hsl(343, 70%, 37%);
+        --bs-table-striped-bg: #ad1f47;
+        --bs-table-striped-color: linen;
+        color: linen;
+        border-color: coral;
+}
+
+.productos table th{
+    color: coral;
+}
+
+.dropdown-menu {
+    background-color: #ff7f506e;
+}
+
+.caption{
+    color: coral;
+}
+
+/* Contacto */
+
+.formulario label{
+    color: black;
+}
+
+.formulario textarea{
+    transform: scale(0.7);
+}
+
+/* Historia */
+
+.historia p{
+    color: linen;
+}
+
+.historia img{
+    height: 16rem;
+}
+
+}
