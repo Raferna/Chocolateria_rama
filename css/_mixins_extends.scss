@@ -19,9 +19,6 @@
 }
 
 .table-dream {
-    @extend .table
-    --bs-table-bg: coral;
-    --bs-table-striped-bg: #ff7752;
-    color: #000;
+    color: black;
     border-color: #A11C41;
 }

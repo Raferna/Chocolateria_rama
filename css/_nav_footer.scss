@@ -1,0 +1,131 @@
+// ---Navbar---
+
+.navbar{
+    margin: 1.5 rem;
+    font-family: 'Roboto', sans-serif;
+        background: {
+        image: url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/chocolate-1533631081.jpg?resize=768:*);
+        color: #A11C41;
+        size: cover;}
+}
+    ul{
+    list-style-type: none;
+    padding: 1rem;
+
+    li{
+    display: inline-block;
+    margin: .25rem;
+
+    a{
+    text-decoration: none;
+    color: linen !important;
+    font-size: 1rem !important;
+
+        &:hover {
+        color: coral !important;
+        }
+
+    .navbar-toggler{
+        color: rgba(255, 255, 255, 0.55);
+        border-color: rgba(255, 255, 255, 0.1);
+        z-index: 100;
+    }
+    }
+    }
+    }
+    
+    
+.dropdown-menu {
+    border: none;
+    background: {
+        color: #a11c4249;
+        blend-mode: saturation;
+    }
+}
+
+// ---Footer---
+
+.footer{
+    background-color: #A11C41;
+    grid-area: footer;
+    display: grid;
+    grid-template-areas:
+    "enlaces none none redes";
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+    column-gap: 10px;
+    height: 30vh;
+    transform: translateY(bottom);
+
+    ul{
+        list-style-type: none;
+        padding: 2rem;
+    }
+
+    a{
+        text-decoration: none;
+        color: linen;
+        font-size: 1rem;
+        }
+
+    p{
+        color: coral;
+        font-size: 1.1rem;
+        padding-bottom: .5rem;
+        padding-top: .5rem;
+        padding-right: 1rem;
+        transform: translateY(2rem);
+    }
+
+    img{
+        margin: 1rem;
+        height: 3.75rem;
+        transform: translate(2rem,1rem);
+    }
+
+}
+
+.enlaces{
+    grid-area: enlaces;
+    display: inline;
+}
+
+.redes{
+    grid-area: redes;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    // ---Navbar---
+
+.navbar{
+
+        background: {
+        image: none ;
+    }
+}
+
+    /* Footer */
+    
+    .footer{
+        background-color: coral;
+        height: 33vh !important;
+    
+    
+        p{
+            color: #A11C41;
+        }
+    
+        a{
+            color: black !important;
+            display: inline-block;
+
+            &:hover {
+                color: #A11C41 !important;
+            }
+        }
+    
+    }
+}
