@@ -115,39 +115,6 @@ ul {
         transform: translate(0rem, 10.5rem);
         margin: auto; } }
 
-.formulario {
-  padding: 1rem;
-  background-image: linear-gradient(to top, #A11C41, coral); }
-  .formulario label {
-    font-family: 'Roboto', sans-serif;
-    color: linen; }
-    .formulario label input {
-      font-family: 'Roboto', sans-serif;
-      margin: 1rem;
-      margin-left: 3rem; }
-      .formulario label input textarea {
-        font-family: 'Roboto', sans-serif;
-        margin-top: 1rem;
-        margin-left: 3rem; }
-
-.name {
-  transform: translateX(0.3rem); }
-
-.lastname {
-  transform: translateX(0.3rem); }
-
-.mail {
-  transform: translateX(-1rem); }
-
-.bttn {
-  cursor: pointer;
-  border-radius: 1rem;
-  padding: .25rem;
-  margin: .25rem; }
-  .bttn:hover {
-    transform: scale(1.05);
-    color: coral; }
-
 .table {
   padding: 1rem;
   text-align: center;
@@ -357,4 +324,6 @@ h1, .h1 {
     width: 70vw !important; }
   .g-4-v2 {
     margin-left: 13vw !important;
-    margin-right: 15vw !important; } }
+    margin-right: 15vw !important; }
+  .card {
+    width: 85vw !important; } }

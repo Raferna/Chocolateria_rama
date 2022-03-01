@@ -1,6 +1,5 @@
 @import "maps";
 @import "nav_footer";
-@import "contacto";
 @import "mixins_extends";
 @import "body";
 
@@ -287,6 +286,10 @@ label{
 .g-4-v2{
     margin-left: 13vw !important;
     margin-right: 15vw !important;
+}
+
+.card{
+    width: 85vw !important;
 }
 
 }
