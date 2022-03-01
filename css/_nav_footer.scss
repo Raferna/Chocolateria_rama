@@ -12,26 +12,26 @@
     list-style-type: none;
     padding: 1rem;
 
-    li{
-    display: inline-block;
-    margin: .25rem;
+        li{
+        display: inline-block;
+        margin: .25rem;
 
-    a{
-    text-decoration: none;
-    color: linen !important;
-    font-size: 1rem !important;
+        a{
+        text-decoration: none;
+        color: linen !important;
+        font-size: 1rem !important;
 
-        &:hover {
-        color: coral !important;
+            &:hover {
+            color: coral !important;
+            }
+
+        .navbar-toggler{
+            color: rgba(255, 255, 255, 0.55);
+            border-color: rgba(255, 255, 255, 0.1);
+            z-index: 100;
         }
-
-    .navbar-toggler{
-        color: rgba(255, 255, 255, 0.55);
-        border-color: rgba(255, 255, 255, 0.1);
-        z-index: 100;
-    }
-    }
-    }
+        }
+        }
     }
     
     
@@ -50,24 +50,51 @@
     grid-area: footer;
     display: grid;
     grid-template-areas:
-    "enlaces none none redes";
+    "enlaces info info redes";
     grid-template-rows: repeat(4, 1fr);
     grid-template-columns: 1fr;
     row-gap: 10px;
     column-gap: 10px;
-    height: 30vh;
-    transform: translateY(bottom);
+    height: 35vh;
 
     ul{
         list-style-type: none;
         padding: 2rem;
     }
 
+    li{
+        display: block !important;
+    }
+
     a{
         text-decoration: none;
         color: linen;
         font-size: 1rem;
-        }
+    }
+
+}
+
+.info{
+    grid-area: info;
+
+    p{
+        color: coral;
+        font-size: small;
+        text-align: center;
+        padding-bottom: .5rem;
+        transform: translate(-17rem, 10rem);
+        margin: auto;
+    }
+
+}
+
+.enlaces{
+    grid-area: enlaces;
+    display: inline;
+}
+
+.redes{
+    grid-area: redes;
 
     p{
         color: coral;
@@ -81,18 +108,8 @@
     img{
         margin: 1rem;
         height: 3.75rem;
-        transform: translate(2rem,1rem);
+        transform: translate(5rem,1rem);
     }
-
-}
-
-.enlaces{
-    grid-area: enlaces;
-    display: inline;
-}
-
-.redes{
-    grid-area: redes;
 }
 
 
@@ -101,7 +118,6 @@
     // ---Navbar---
 
 .navbar{
-
         background: {
         image: none ;
     }
@@ -111,8 +127,6 @@
     
     .footer{
         background-color: coral;
-        height: 33vh !important;
-    
     
         p{
             color: #A11C41;
@@ -126,6 +140,36 @@
                 color: #A11C41 !important;
             }
         }
-    
+
+        img{
+            height: 2.75rem;
+        }
+
+        .info{
+            display: none;
+        }
+
     }
+}
+
+
+@media (min-width: 768px) and (max-width: 1199.98px){
+
+.footer{
+    grid-template-areas:
+    "enlaces info info redes";
+    grid-template-rows: repeat(4, 1fr);
+    height: 35vh;
+    
+    .info{
+        grid-area: info;
+    
+        p{
+            font-size: smaller;
+            transform: translate(0rem, 10.5rem);
+            margin: auto;
+        }
+    }
+}
+
 }

@@ -43,32 +43,43 @@
       </div>
     </div>
   </nav>
-    
-    <section class="formulario"><form action="">
 
-      <div class="col-12 titles" style="margin-top: 1rem;">
-        <h1>Comunicate con nosotros</h1>
+
+    <div class="col-12 titles" style="margin-top: 1rem;">
+      <h1>Comunicate con nosotros</h1>
+    </div>
+
+
+        <!-- <button type="submit" value="Enviar consulta" class="btn btn-light">
+        <button type="reset" value="Reiniciar formulario" class="btn btn-light"> -->
+
+    <form class="row g-3">
+      <div class="col-md-6">
+        <label for="name" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="name" placeholder="Ingresa tu nombre" required>
       </div>
-    
-        <div class="div_name"><label for="nombre">Nombre:</label>
-        <input type="text" class="name" placeholder="Ingresa tu nombre" required></div>
-
-        <div class="div_lastname"><label for="apellido">Apellido:</label>
-        <input type="text" class="lastname" placeholder="Ingresa tu apellido"></div>
-
-        <div class="div_mail"></div><label for="correo">Correo <br> electrónico:</label>
-        <input type="text" class="mail" placeholder="Ingresa tu e-mail" required></div>
-
-        <div class="div_tel"></div><label for="tel">Teléfono:</label>
-        <input type="text" class="tel" placeholder="Ingresa tu teléfono" required></div>
-
-        <div class="div_query"><label for="consulta">Consulta:</label>
-        <textarea class="query" cols="50" rows="5"
-        placeholder="¿Cuál es tu consulta?" required></textarea></div>
-
-        <input type="submit" value="Enviar consulta" class="bttn">
-        <input type="reset" value="Reiniciar formulario" class="bttn">
-    </form></section>
+      <div class="col-md-6">
+        <label for="Surname" class="form-label">Apellido</label>
+        <input type="text" class="form-control" id="Surname" placeholder="Ingresa tu apellido">
+      </div>
+      <div class="col-md-6">
+        <label for="e-mail" class="form-label">Correo electrónico</label>
+        <input type="email" class="form-control" id="e-mail" placeholder="Ingresa tu e-mail" required>
+      </div>
+      <div class="col-md-6">
+        <label for="phone" class="form-label">Teléfono</label>
+        <input type="text" class="form-control" id="phone" placeholder="Ingresa tu teléfono" required>
+      </div>
+      <div class="col-12">
+        <label for="query" class="form-label">Consulta</label>
+        <textarea cols="50" rows="5" class="form-control" id="query" placeholder="¿Cuál es tu consulta?" required>
+        </textarea>
+      </div>
+      <div class="col-12">
+        <button type="submit" class="btn btn-light">Enviar consulta</button>
+        <button type="reset" class="btn btn-light">Reiniciar formulario</button>
+      </div>
+    </form>
     
     <a href="" class="arriba"><img src="../assets/up-arrow.png" alt="Volver arriba"></a>
 
@@ -83,8 +94,8 @@
 
     <div class="redes">
     <p>Visitá nuestras redes sociales</p>    
-    <a href="https://www.facebook.com/sueniosDeChoco/"> <img src="../assets/LogoFB.png" alt="Logo Facebook"> </a>
-    <a href="https://www.instagram.com/sdechoco.5/"> <img src="../assets/LogoIG.png" alt="Logo Instagram"> </a></div>
+    <a href="https://www.facebook.com/sueniosDeChoco/" target=”_blank”> <img src="../assets/LogoFB.png" alt="Logo Facebook"> </a>
+    <a href="https://www.instagram.com/sdechoco.5/" target=”_blank”> <img src="../assets/LogoIG.png" alt="Logo Instagram" > </a></div>
     </footer>
 
     <script src="../js_bs/bootstrap.min.js"></script>

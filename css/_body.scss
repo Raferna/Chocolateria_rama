@@ -11,12 +11,12 @@ body{
     z-index: 10;
 
     img{
-        @include tamaño(50px,50px)
+        @include tamaño(50px,50px);
 
         &:hover{
             transform: scale(1.1);
+        }
     }
-}
 }
 
 .card {
